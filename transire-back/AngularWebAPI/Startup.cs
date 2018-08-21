@@ -28,8 +28,8 @@ namespace AngularWebAPI
             services.AddCors();
             //services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("Data Source=Mangesh\\sql2016;Initial Catalog=EPIServices;Persist Security Info=True;User ID=sa;Password=sa;"));
 
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("Data Source = NOTE - LNV - CLAUDE\\SQLEXPRESS; Initial Catalog = transire - db; Integrated Security = True; Pooling = False"));
-            
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("Data Source = NOTE-LNV-CLAUDE\\SQLEXPRESS; Initial Catalog = transire - db; Integrated Security = True; Pooling = False"));
+
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
